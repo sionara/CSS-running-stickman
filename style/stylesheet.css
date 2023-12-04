@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+#game-container {
+  overflow: hidden;
+  position: relative;
+  width: 600px;
+  height: 300px;
+  background-color: #f7f7f7;
+  border: 1px solid black;
+  margin: auto;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 70px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.jump {
+  animation: jump 0.7s linear;
+}
+#stickman {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: #4CAF50;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(-600px,0);
+  }
+}
+
+
+.cloud {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  animation: slide 30s linear infinite;
+}
