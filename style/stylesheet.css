@@ -61,5 +61,15 @@ body {
   width: 30px;
   height: 30px;
   background-color: blue;
-  animation: slide 30s linear infinite;
+  animation: slide 10s linear infinite;
+}
+
+#obstacle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  animation: slide 3s linear infinite;
 }
