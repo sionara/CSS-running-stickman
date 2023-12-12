@@ -49,10 +49,6 @@ body {
   }
 }
 
-.jump {
-  animation: jump 0.7s linear;
-}
-
 @keyframes run {
   100% {background-position: -384px;}
 }
@@ -76,14 +72,12 @@ body {
   }
 }
 
-
 .cloud {
   position: absolute;
   top: 0;
   right: 0;
-  width: 30px;
-  height: 30px;
-  background-color: blue;
+  width: 100px;
+  height: 100px;
   animation: slide 10s linear infinite;
 }
 
