@@ -16,15 +16,14 @@ window.onload = function(){
   let isAlive = setInterval(function (){ 
     //current y position of stickman
     let stickmanTop = parseInt(window.getComputedStyle(stickman).getPropertyValue("top"));
-    //console.log(stickmanTop);
     //current x position of obstacle
     let obstacleLeft = parseInt(window.getComputedStyle(obstacle).getPropertyValue("left"));
-    console.log(obstacleLeft);
+    //console.log(obstacleLeft);
     //check for collision
-    if (obstacleLeft < 50 && obstacleLeft > 0 && stickmanTop >= 180){
+    if (obstacleLeft < 70 && obstacleLeft > 20  && stickmanTop >= 220){
       alert("game over!");
     }
-  }, 10)
+  }, 16)
 
   document.addEventListener("keydown", function (event) {
     // checking if previous jump animation has ended.
