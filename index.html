@@ -7,15 +7,35 @@
   <title>Stickman game</title>
 </head>
 <body>
-  <div id="game-container">
-    <div class = "sliding-background"></div>
-    <img src="image/—Pngtree—cloud_5618567.png" class="cloud">
-    <div id="stickman"></div>
-    <div id="obstacle"></div>
-  </div>
-  <div>Background image:
-    <a href="https://www.vecteezy.com/free-vector/arab-desert">Arab Desert Vectors by Vecteezy</a>
-  </div>
+  <main>
+    <h1>STICKMAN RUN</h1>
+    <div id="instruction">
+      Press Start to begin the game! Press any key to jump. Try to avoid the block! If you get hit, you will have to restart.
+    </div>
+    <img src="./image/desert.jpg" id="left-content" alt="photo of a desert">
+    <img src="./image/treasure.jpg" id="right-content" alt="photo of a treasure chest">
+    <div id="game-container">
+      <div id="background" class = "sliding-background"></div>
+      <img src="image/cloud.png" id="cloud" class="cloud" alt="photo of clouds">
+      <div id="stickman"></div>
+      <div id="obstacle"></div>
+    </div>
+   
+    <div class="wrapper">
+      <button id="start">Start</button>
+      <div>Background image:
+        <a href="https://www.vecteezy.com/free-vector/arab-desert">Arab Desert Vectors by Vecteezy</a>
+      </div>
+      <div>left image:
+        <a href="http://www.freepik.com">Designed by Freepik</a>
+      </div>
+      <div>
+        right image: <a href="https://www.freepik.com/free-vector/chest-with-gold-coins-gemstones-crystals-trophy_20495007.htm#query=treasure&position=1&from_view=search&track=sph&uuid=855a6182-5aa3-4385-a004-51433028e1a4"></a> Image by upklyak on Freepik
+      </div>
+    </div> 
+      
+  </main>
+
   <script src="script/script.js"></script>
 </body>
 </html>

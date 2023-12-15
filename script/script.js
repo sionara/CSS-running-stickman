@@ -1,7 +1,18 @@
 window.onload = function(){
   const stickman = document.getElementById("stickman");
+  const background = document.getElementById("background");
   const obstacle = document.getElementById("obstacle");
+  const cloud = document.getElementById('cloud');
+  const startBtn = document.getElementById('start');
   let end = true;
+
+  startBtn.addEventListener("click", function(){
+    console.log("function rans")
+    background.classList.add("background-animation");
+    obstacle.classList.add("obstacle-animation");
+    cloud.classList.add("cloud-animation");
+  })
+
 
   function jump() {
     end = false;
@@ -21,7 +32,7 @@ window.onload = function(){
     //console.log(obstacleLeft);
     //check for collision
     if (obstacleLeft < 70 && obstacleLeft > 20  && stickmanTop >= 220){
-      alert("game over!");
+      location.reload();
     }
   }, 16)
 

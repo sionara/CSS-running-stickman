@@ -1,3 +1,4 @@
+/* head */
 html {
   box-sizing: border-box;
 }
@@ -6,8 +7,40 @@ html {
   box-sizing: inherit;
 }
 
+/* main */
+#left-content {
+  position: absolute;
+  left: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+#right-content {
+  position: absolute;
+  right: 10px;
+  width: 200px;
+  height: 200px;
+}
+h1 {
+  text-align: center;
+  font-family: 'Lucida Sans';
+}
+
+#instruction {
+  text-align: center;
+  padding-bottom: 1em;
+}
 body {
   margin: 0;
+  background-color: aquamarine;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
 }
 
 #game-container {
@@ -24,6 +57,10 @@ body {
   background: url(../image/1kbh_9feb_210426_generated.jpg) repeat-x;
   height: 300px;
   width: 5076px;
+  /* animation: move-background 60s linear infinite; */
+}
+
+.background-animation {
   animation: move-background 60s linear infinite;
 }
 
@@ -81,22 +118,26 @@ body {
     left: -30px;
   }
 }
-
+.cloud-animation {
+  animation: slide 10s linear infinite;
+}
 .cloud {
   position: absolute;
   top: 0;
   right: 0;
   width: 100px;
   height: 100px;
-  animation: slide 10s linear infinite;
+  /* animation: slide 10s linear infinite; */
 }
 
+.obstacle-animation {
+  animation: slide 3s linear infinite;
+}
 #obstacle {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: -30px;
   width: 30px;
   height: 30px;
   background-color: black;
-  animation: slide 3s linear infinite;
 }
